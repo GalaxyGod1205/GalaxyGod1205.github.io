@@ -13,8 +13,7 @@ const firebaseConfig = {
   firebase.initializeApp(firebaseConfig);
   const db = firebase.database();
   
-  let username;
-  
+  let username = ''; // Global declaration of username
   // Function to set the username
   function setUsername() {
     const nameInput = document.getElementById('username');
